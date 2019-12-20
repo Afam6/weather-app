@@ -1,38 +1,244 @@
+* {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    position: relative;
+    background: url(./img/jade-stephens-X2rbZBast0E-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: white;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 .App {
-  text-align: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    margin-bottom: 1.5rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cities {
+    margin-top: 3em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.city {
+    float: left;
+    width: 25%;
+    text-align: center;
+    min-height: 185px;
+    padding-bottom: 1em;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
-.App-link {
-  color: #61dafb;
+.city h5 {
+    font-size: 1.25em;
+    font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.city p {
+    font-weight: 300;
+}
+
+.conditions p {
+    font-size: 0.9em;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: 2em 0;
+}
+
+@media (max-width: 1680px) {
+    h1 {
+        font-size: 3.1em;
+        margin-top: 2.5em;
+    }
+
+    .cities {
+        margin-top: 4em;
+    }
+
+    .city {
+        min-height: 190px;
+    }
+}
+
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 3em;
+        margin-top: 1.5em;
+    }
+
+    .cities {
+        margin-top: 3.5em;
+    }
+}
+
+@media (max-width: 1366px) {
+    h1 {
+        font-size: 2.9em;
+        margin-top: 1.4em;
+    }
+
+    .App {
+        width: 63%;
+        margin: 0 auto;
+    }
+
+    .cities {
+        margin-top: 3.3em;
+    }
+
+    .footer p {
+        margin: 1em 0 2.5em 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .App {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .cities {
+        margin-top: 3.2em;
+    }
+
+    .footer p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.8em;
+        margin-top: 1.1em;
+    }
+
+    .App {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cities {
+        margin-top: 2.5em;
+    }
+
+    .city {
+        min-height: 165px;
+    }
+
+    .footer {
+        margin-top: 6%;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2.6em;
+        margin-top: 1em;
+    }
+
+    .App {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .city {
+        min-height: 155px;
+    }
+
+    .city h5 {
+        font-size: 1.15em;
+        margin-top: 0.2em;
+    }
+}
+
+@media (max-width: 667px) {
+    .city {
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cities {
+        margin-top: 2em;
+    }
+
+    .city {
+        min-height: 140px;
+        /* padding: 2.4em 0 0 0; */
+    }
+
+    .city h5 {
+        font-size: 1.05em;
+        margin-top: 0.1em;
+    }
+}
+
+@media (max-width: 568px) {
+    .city {
+        min-height: 137px;
+        /* padding: 2.4em 0 0 0; */
+    }
+}
+
+@media (max-width: 480px) {
+    .city {
+        width: 50%;
+    }
 }

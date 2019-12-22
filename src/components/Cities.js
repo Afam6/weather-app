@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 class Cities extends Component {
   render() {
-    console.log(this.props.cities);
     return (
       <div className='cities'>
         {this.props.cities.map(city => (
